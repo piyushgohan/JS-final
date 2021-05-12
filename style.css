@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+
+body{
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:black;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100px;
+    background-color: black;
+    box-sizing: border-box;
+    padding-left: 6%;
+    box-shadow: 0px 0px 10px grey;
+    position: fixed;
+    z-index:4;
+    margin-top:-20px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#logo{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color:white;
+    letter-spacing: 2.5px;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin-right:20px;
+}
+
+span{
+    font-weight:700;
+    color: gold;
+}
+
+.logo-icon{
+    font-size: 34px;
+}
+
+.menu-items{
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: 500;
+    display: inline-block;
+    margin-left:30px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid gold;
+    padding-bottom: 2px;
+    transition: all 100ms ease-in;
+    vertical-align: super;
+    scroll-behavior: smooth;
+}
+
+.menu-items:hover{
+    color:lightskyblue;
+    border-bottom: 2px solid seagreen;
+}
+
+#search-box{
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+#search-text{
+    width:20vw;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon{
+    font-size: 16px;
+    font-weight: 600;
+    color:darkslategray;
+}
+
+.cart-img{
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: greenyellow;
+}
+
+.cart-img::after{
+    content: "0";
+    display:inline-block;
+    height:15px;
+    width: 15px;
+    background-color: honeydew;
+    background-color: gold;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50%;
+    vertical-align: text-top;
+    box-sizing: border-box;
+    margin-top:-5px;
+    margin-left:-5px;
+    padding-top: 2px;
+    font-weight: 900;
+}
+
+.prof-img{
+    width: 70px;
+    height: 70px;
+    vertical-align: bottom;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#carosel{
+    padding-top: 80px;
+    height:70vh;
+    width: 100%;
+    margin: 0%;
+    z-index:1;
+    border-bottom: 3px solid silver ;
+    border-top: 3px solid silver;
+}
+
+.item{
+    display:block;
+    height:70vh;
+    width: 100%;
+    margin: 0;
+}
+
+.banner-img{
+    display: block;
+    height:70vh;
+}
+
+h3{
+    color:goldenrod;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8%;
+}
+#h1{
+    scroll-behavior: smooth;
+}
+
+#h2{
+    scroll-behavior: smooth;
+}
+
+.access{
+    background-color: black;
+    padding-top: 1%;
+    display: flex;
+    box-sizing: border-box;
+    padding-left:2%;
+}
+
+.cards{
+    width:100%;
+    margin-right: 2%;
+    background-color: rgb(197, 197, 152);
+    box-shadow: 0px 0px 4px whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards-img{
+    max-width: 100%;
+}
+
+.img-name{
+    color: rgb(124, 90, 3);
+    padding-left:5px;
+    font-weight: 600;
+    font-family: 'Cairo', sans-serif; 
+    font-size: 18px;
+    margin: 0px;
+}
+
+.img-brand{
+    color: rgb(1, 6, 58);
+    padding-left:5px;
+    font-weight: 900;
+    font-family: 'Cairo', sans-serif; 
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.img-price{
+    color: rgb(6, 126, 96);
+    padding-left:5px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer{
+    margin-top: 8%;
+    display: flex;
+    border-top: 5px solid silver;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+h4{
+    font-family: 'Patrick Hand', cursive;
+    color: gold;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.links{
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 1.4;
+
+}
+.links:hover{
+    color: gold;
+}
+
+.text{
+
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 1.4;
+
+}
+
+/* product page styling */
+
+#product-container{
+    padding-top:80px;
+    width: 100%;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#product-disp{
+    height:90vh;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#preview1{
+    width:32%;
+    margin: 25px;
+    box-sizing: border-box;
+
+}
+
+.img-display{
+    max-width: 100%;
+    margin-left:10%;
+    display:inline-block;
+    border-radius:5px;
+    border:10px dashed rgb(196, 156, 57);
+    padding:2px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px white;
+}
+#preview2{
+    margin-top: 0px;
+    margin-left: 5%;
+    box-sizing: border-box;
+    width:55%;
+}
+
+.img-contain{
+    display:flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    margin-top:10px;
+}
+
+.img-flex{
+    width:110px;
+    height:150px;
+    display:block;
+    border:4px transparent;
+    padding:2px;
+    margin-right: 2%;
+    cursor:pointer;
+}
+.active1{
+    border:4px solid gold;
+}
+
+.product-name{
+    font-size:40px;
+    color:antiquewhite;
+    font-family: 'Overlock SC', cursive;
+    letter-spacing:1.5px;
+    margin-bottom: 0px;
+}
+
+.product-brand{
+    font-size: 30px;
+    color: rgb(23, 206, 206);
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing:1px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+.product-price{
+    font-size:25px;
+    font-family: 'Cairo', sans-serif; 
+    color: greenyellow;
+    font-weight:500;
+    margin: 0;
+    margin-top:5px;
+    letter-spacing:1px;
+}
+
+.head-title{
+    font-size:25px;
+    font-family: 'Overlock SC', cursive;
+    color: gold;
+    margin:0px;
+    margin-top:7px;
+    letter-spacing:1px;
+}
+
+.product-desc{
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    color:aliceblue;
+}
+
+.btn-cart{
+    display:block;
+    margin-top:10%;
+    margin-left:auto;
+    margin-right:20%;
+    border: none;
+    padding:30px 40px;
+    background-color:rgb(177, 153, 21);
+    border-radius:4px;
+    font-size:18px;
+    font-family: 'Cairo', sans-serif;
+    color:white;
+    font-weight:bold;
+    letter-spacing: 1px;
+    cursor:pointer;
+    outline:none;
+}
+
+.btn-cart:hover{
+    background-color:rgb(211, 186, 43);
+}
+
+/* checkout page styles */
+
+#landing-section{
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+#checkout-items{
+    width:90%;
+    height:60vh;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#checkout-1{
+    width:45%;
+    margin-right: 2%;
+}
+
+.check-card{
+    width: 100%;
+    height:100px;
+    background-color:rgb(200, 207, 175);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px gold;
+    padding-right:10px;
+    
+}
+
+.check-img{
+    height:80px;
+    width:70px;
+    display: inline-block;
+    margin:5px 10px;
+    border-radius: 2px;
+    border: 4px solid goldenrod;
+}
+
+.check-title{
+    font-size:18px;
+    font-family: 'Overlock SC', cursive;
+    color: darkolivegreen;
+    font-weight: 600;
+    letter-spacing:0.4px;
+}
+
+.check-price{
+    color:green;
+    font-size: 20px;
+    letter-spacing:2px;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+}
+
+h5{
+    font-size: 35px;
+    font-family: 'Cairo', sans-serif; 
+    color: darkgoldenrod;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    margin-left: 6%;
+    font-weight: 600;
+    letter-spacing:2px; 
+}
+
+#checkout-2{
+    background-color:rgb(200, 207, 175);
+    width: 45%;
+    height: 20vh;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 10px solid goldenrod;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#cc-head{
+    font-size:25px;
+    font-family: 'Cairo', sans-serif; 
+    letter-spacing:2px;
+    font-weight: 600;
+    color: rgb(131, 77, 12);
+    text-transform: uppercase;
+    margin:0;
+    margin-bottom:10px;
+}
+
+.check-amount{
+    font-size:25px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing:2px;
+    font-weight: 600;
+    color: rgb(10, 161, 10);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom:10px;
+}
+
+.check-btn{
+    box-sizing: border-box;
+    padding: 20px 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif; 
+    color: white;
+    background-color:goldenrod;
+    box-sizing: border-box;
+    font-weight:600;
+}
+
+/*thanks page styles*/
+
+#landing-section-two{
+    padding-top: 80px;
+    width:100%;
+    margin:0;
+    height:50vh;
+}
+
+#thanks{
+    background-color:gold;
+    box-sizing: border-box;
+    width:400px;
+    height:400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    text-align:center;
+    translate: 50%;
+    padding-top: 7%;
+    margin-top:2%;
+}
+
+#oo-text{
+    font-size:40px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing:2px;
+    font-weight: 600;
+    color: rgb(26, 177, 26);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom:10px;
+}
+
+#o1-text{
+    font-size:30px;
+    font-family: 'Cairo', sans-serif; 
+    letter-spacing:2px;
+    font-weight: 600;
+    color: rgb(131, 12, 12);
+    text-transform: uppercase;
+    margin:0;
+    margin-bottom:10px;
+}
+
+#oo-btn{
+    box-sizing: border-box;
+    padding: 20px 50px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif; 
+    color: darkolivegreen;
+    background-color:rgb(207, 182, 119);
+    box-sizing: border-box;
+    font-weight:600;
+    border-radius:10%;
+}
+
+
+
+
+
+
